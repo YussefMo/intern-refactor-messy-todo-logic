@@ -1,0 +1,116 @@
+body {
+	font-family: 'Segoe UI', Arial, sans-serif;
+	background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+	margin: 0;
+	padding: 0;
+  min-height: 100dvh;
+}
+
+.container {
+	max-width: 420px;
+	margin: 48px auto;
+	background: #fffbe7;
+	padding: 28px 36px 36px 36px;
+	border-radius: 16px;
+	box-shadow: 0 4px 24px rgba(60, 72, 88, 0.12);
+	border: 2px solid #ffe066;
+}
+
+h1 {
+	text-align: center;
+	color: #5c3d99;
+	margin-bottom: 28px;
+	letter-spacing: 2px;
+	font-weight: 700;
+}
+
+.input-group {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 24px;
+}
+
+#taskInput {
+	flex: 1;
+	padding: 10px 14px;
+	border: 2px solid #a3a3a3;
+	border-radius: 6px;
+	font-size: 17px;
+	background: #f0f4ff;
+	transition: border 0.2s;
+}
+#taskInput:focus {
+	border: 2px solid #7c3aed;
+	outline: none;
+}
+
+#addTaskBtn {
+	padding: 10px 20px;
+	background: linear-gradient(90deg, #7c3aed 0%, #38bdf8 100%) no-repeat center;
+	color: #fff;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 17px;
+	font-weight: 600;
+	box-shadow: 0 2px 8px rgba(60, 72, 88, 0.08);
+	transition: background 0.2s, box-shadow 0.2s;
+}
+#addTaskBtn:hover {
+	background: linear-gradient(90deg, #5c3d99 0%, #0ea5e9 100%);
+	box-shadow: 0 4px 16px rgba(60, 72, 88, 0.12);
+}
+
+#taskList {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.task-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 12px 0;
+	border-bottom: 1.5px dashed #c7d2fe;
+	transition: background 0.2s;
+}
+.task-item:last-child {
+	border-bottom: none;
+}
+.task-item:hover {
+	background: #f1f5f9;
+}
+.task-item .done {
+	text-decoration: line-through;
+	color: #b91c1c;
+	font-style: italic;
+}
+
+.toggle-btn,
+.delete-btn {
+	margin-left: 10px;
+	padding: 6px 14px;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 15px;
+	font-weight: 500;
+	transition: background 0.2s, color 0.2s;
+}
+.toggle-btn {
+	background: linear-gradient(90deg, #22d3ee 0%, #a3e635 100%);
+	color: #22223b;
+}
+.toggle-btn:hover {
+	background: linear-gradient(90deg, #0ea5e9 0%, #65a30d 100%);
+	color: #fff;
+}
+.delete-btn {
+	background: linear-gradient(90deg, #f87171 0%, #fbbf24 100%);
+	color: #fff;
+}
+.delete-btn:hover {
+	background: linear-gradient(90deg, #be123c 0%, #f59e42 100%);
+	color: #fff;
+}
